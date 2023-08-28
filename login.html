@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="loginbox">
+        <form>
+            <h2 id="txt">Login</h2>
+
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <input type="text" name="user" required>
+                <label>Email</label>
+            </div>
+
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password" name="pass" required>
+                <label>password</label>
+            </div>
+
+            <div class="rememberforgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button id="btn" name="submit" type="submit">Login</button>
+          
+            <div class="reglink">
+                <p>Don't have an account?<a href="#">Register</a></p>
+            </div>
+
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+        </form>
+
+    </div>
+
+    <div class="colors">
+        <span class="active" style="--clr:#d11d74;" onclick="changecolor('#d11d74')"></span>
+        <span style="--clr:#ff0000;" onclick="changecolor('#ff0000')"></span>
+        <span style="--clr:#6666ff;" onclick="changecolor('#6666ff')"></span>
+        <span style="--clr:#ff0066;" onclick="changecolor('#ff0066')"></span>
+        <span style="--clr:#dd43ff;" onclick="changecolor('#dd43ff')"></span>
+     </div>
+
+    <!--<script>
+        let btn=document.getElementById('btn');
+        let txt=document.getElementById('txt');
+      
+        function changecolor(color){
+          document.body.style.background=color;  
+          btn.style.background=color;
+          txt.style.borderColor=color;
+     
+
+          document.querySelectorAll('span').forEach(function(item){
+            item.classList.remove('active');
+          })
+          event.target.classList.add('active');
+        }
+    </script>-->
+     <script src="script.js"></script>
+        
+</body>
+</html>
